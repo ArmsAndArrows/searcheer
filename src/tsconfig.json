@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "typeRoots": ["./node_modules/@types", "./src/@types"],
+    "removeComments": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+:root {
+	--c-bg: linear-gradient(45deg, #07172A, #0E3768);
+	--c-code-bg: hsla(0, 0%, 100%, 12%);
+	--c-white-main: #ffffff;
+	--c-white-a-80: hsla(0, 0%, 100%, 80%);
+
+	--c-black-main: #1d1d1f;
+
+	--c-blue-main: #0b84ff;
+	--c-blue-a-40: hsla(210, 100%, 52%, 40%);
+	--c-blue-shadow: hsla(229, 79%, 65%, 0.2);
+
+	--c-border: #454c54;
+	--c-searchbar-bg: rgba(69, 76, 84, 50%);
+	--с-gray-main: #98989d;
+	--c-gray-a-50: hsla(240, 2%, 61%, 50%);
+	--c-green-main: #32d74b;
+	--с-answer-button: red;
+
+	--header-shadow: hsla(0, 0%, 100%, 0.2);
+
+	--cont-wrap-marg-top: 16rem;
+}
+
+@font-face {
+	font-family: "Black Han Sans";
+	src: url(../assets/fonts/BlackHanSans-Regular.ttf) format("truetype");
+}
+
+/* CSS RESET START */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	font-weight: normal;
+}
+
+
+button,
+input {
+	all: unset;
+}
+
+html {
+	font-size: 50%;
+	--webkit-tap-highlight-color: transparent;
+	color-scheme: dark;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	min-height: 100vh;
+	transition: color 0.5s, background-color 0.5s;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+
+	text-rendering: optimizeLegibility;
+	--webkit-font-smoothing: antialiased;
+	--moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* CSS RESET END */
+
+/* CUSTOM UTILITIES */
+
+.fancy-shadow {
+	box-shadow: 1px 2px 2px var(--c-blue-main), 2px 4px 4px var(--c-blue-main);
+}
+
+@media screen and (max-width: 940px) {
+	html {
+		font-size: 40%;
+	}
+}
